@@ -2,7 +2,7 @@
     "name": "fatoorahpayment/gatewayintegration",
     "version": "1.0.0",
     "description": "package created for crazy idea company to handle the gateway integration for myfatoorah",
-    "type": "project",
+    "type": "library",
     "license": "MIT",
     "homepage" : "https://github.com/crazyideaco/fatoorahPackage",
     "keywords": ["laravel", "gateway", "fatoorah", "payment"],
