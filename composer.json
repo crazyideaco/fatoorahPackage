@@ -1,0 +1,27 @@
+{
+    "name": "fatoorahpayment/gatewayintegration",
+    "version": "1.0.0",
+    "description": "package created for crazy idea company to handle the gateway integration for myfatoorah",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Fatoorahpayment\\Gatewayintegration\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "crazy-idea-company",
+            "email": "crazyideacompany@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fatoorahpayment\\Gatewayintegration\\GatewayintegrationServiceProvider"
+            ]
+        }
+    }
+}
