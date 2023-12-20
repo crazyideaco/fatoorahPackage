@@ -14,6 +14,14 @@
 - ### publish the package
 - ### submit your package to [packagist.org](https://packagist.org/)
 
+# references 
+- ### [publish-laravel-packagist](https://pusher.com/tutorials/publish-laravel-packagist/#creating-the-bare-bones-of-the-package)
+
+- ### [laravel-docs-packages](https://laravel.com/docs/10.x/packages)
+
+- ### [myfatoorah-docs](https://docs.myfatoorah.com/docs)
+
+
 ## create laravel project
 create your required version of laravel framework project, its preferable to be the latest version
 
