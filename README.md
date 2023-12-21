@@ -126,6 +126,11 @@ it may be something like this
 
 - after pushing your tags goto your repo and create release based on your tag 
 
+- **keep in mind that packagist keep track of the releases from your github and if you want to update your package you need to push to the main and your tag of the release**
+ 
+- **also the version key in your package composer.json file need to be the same as the release title**
+
+
 
 
 
