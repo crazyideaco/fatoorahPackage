@@ -13,7 +13,6 @@ class MyFatoorahApiController extends Controller
 
     public function initial_data(Request $request)
     {
-        dd('dd');
         /** still need to handle the request  */
         $data = [
             "InvoiceAmount" =>  $request->InvoiceAmount,
