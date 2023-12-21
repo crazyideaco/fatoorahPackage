@@ -20,10 +20,14 @@
         }
     ],
     "require": {
-        "illuminate/support": "*"
+        "illuminate/support": "*",
+        "illuminate/container": "^8.12|^9.0|^10.0|^11.0",
+        "illuminate/contracts": "^8.12|^9.0|^10.0|^11.0"
     },
     "require-dev": {
-        "illuminate/support": "*"
+        "illuminate/support": "*",
+        "illuminate/container": "^8.12|^9.0|^10.0|^11.0",
+        "illuminate/contracts": "^8.12|^9.0|^10.0|^11.0"
     },
     "extra": {
         "laravel": {

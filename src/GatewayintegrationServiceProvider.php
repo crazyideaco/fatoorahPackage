@@ -3,6 +3,7 @@
 namespace Fatoorahpayment\Gatewayintegration;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Config;
 
 class GatewayintegrationServiceProvider  extends ServiceProvider
 {
@@ -13,7 +14,7 @@ class GatewayintegrationServiceProvider  extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/config/myfatoorahConfig.php' => $this->config_path('myfatoorahConfig.php'),
+            __DIR__.'/../config/myfatoorahConfig.php' =>  Config::get('myfatoorahConfig.php'),
         ], 'myfatoorah-config');
 
         // Fatoorahpayment\Gatewayintegration\src\GatewayintegrationServiceProvider.php
