@@ -15,7 +15,7 @@ class GatewayintegrationServiceProvider  extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../config/myfatoorahConfig.php' =>  config_path('myfatoorahConfig.php'),
-        ], 'myfatoorah-config');
+        ]);
 
         // Fatoorahpayment\Gatewayintegration\src\GatewayintegrationServiceProvider.php
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
@@ -23,6 +23,10 @@ class GatewayintegrationServiceProvider  extends ServiceProvider
 
         // Fatoorahpayment\Gatewayintegration\src\GatewayintegrationServiceProvider.php
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'Gatewayintegration');
+        $this->publishes([
+            __DIR__.'/../resources/views' => resource_path('views/vendor/fatoorahpackage'),
+        ]);
+
         // Fatoorahpayment\Gatewayintegration\src\GatewayintegrationServiceProvider.php
         $this->loadMigrationsFrom(__DIR__ . '/Database/migrations');
     }

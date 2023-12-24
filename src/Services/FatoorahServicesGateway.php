@@ -16,12 +16,10 @@ class FatoorahServicesGateway
 
     protected $base_url;
 
-    protected $mode;
-    public function __construct($mode ="test")
+   
+    public function __construct()
     {
-        $this->mode = $mode;
-
-        if($mode == "test"){
+        if(config('myfatoorahConfig.test_mode')){
             $this->base_url = self::sandbox;
         }else{
             $this->base_url = self::live;
