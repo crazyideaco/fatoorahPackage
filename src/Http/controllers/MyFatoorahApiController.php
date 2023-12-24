@@ -64,13 +64,13 @@ class MyFatoorahApiController extends Controller
 
     public function error_page(Request $request){
         // echo($request->all());
-        [$id,$pa] = request()->all();
-        echo($id);
+        // [$id,$pa] = request()->all();
+        // echo($id);
         return view('fatoorahpackage.error');
     }
     public function sucess_page(Request $request){
-        [$id,$pa] = $request->all();
-        echo($id);
+        // [$id,$pa] = $request->all();
+        // echo($id);
         return view('fatoorahpackage.success');
     }
 }
