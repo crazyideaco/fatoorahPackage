@@ -1,5 +1,6 @@
 <?php
 
+use Fatoorahpayment\Gatewayintegration\Http\controllers\MyFatoorahApiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('contact', function(){
     return 'Hello from the contact form package';
+});
+
+Route::controller(MyFatoorahApiController::class)->group(function () {
+    Route::any('error', 'error_page')->name('error_page');
+    Route::any('success', 'sucess_page')->name('callback_page');
 });

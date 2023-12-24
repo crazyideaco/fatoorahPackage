@@ -1,7 +1,6 @@
 <?php
 
 return [
-    'fatoora_base_url' => 'https://apitest.myfatoorah.com/',
     /**
      * API Token Key (string)
      * Accepted value:

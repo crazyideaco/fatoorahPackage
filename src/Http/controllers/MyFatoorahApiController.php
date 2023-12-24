@@ -35,8 +35,8 @@ class MyFatoorahApiController extends Controller
             "CustomerMobile" => $request->CustomerMobile,
             "CustomerEmail" => $request->CustomerEmail,
             "InvoiceValue" => $request->InvoiceValue,
-            "CallBackUrl" => route('api_error_page'), //"http://196.219.155.101:3000/api/success",
-            "ErrorUrl" => route('api_sucess_page'), //"http://196.219.155.101:3000/api/error",
+            "CallBackUrl" => route('callback_page'), //"http://196.219.155.101:3000/success",
+            "ErrorUrl" => route('error_page'), //"http://196.219.155.101:3000/error",
             "Language" => $request->header('Accept-Language') ??  app()->getLocale(),
             "CustomerReference" => "noshipping-nosupplier",
             // "CustomerAddress":{
