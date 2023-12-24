@@ -24,7 +24,7 @@ class GatewayintegrationServiceProvider  extends ServiceProvider
         // Fatoorahpayment\Gatewayintegration\src\GatewayintegrationServiceProvider.php
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'Gatewayintegration');
         $this->publishes([
-            __DIR__.'/resources/views/fatoorahpackage' => resource_path('views/vendor/fatoorahpackage'),
+            __DIR__.'/resources/views/fatoorahpackage' => resource_path('views/fatoorahpackage'),
         ], 'crazyfatoorahpackage-views');
 
         // Fatoorahpayment\Gatewayintegration\src\GatewayintegrationServiceProvider.php
