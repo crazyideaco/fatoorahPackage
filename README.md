@@ -20,6 +20,7 @@
 - ### [laravel-docs-packages](https://laravel.com/docs/10.x/packages)
 
 - ### [myfatoorah-docs](https://docs.myfatoorah.com/docs)
+
 - ### [git tags references](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag)
 
 # some useful commands 
@@ -135,7 +136,7 @@ it may be something like this
  
 - **also the version key in your package composer.json file need to be the same as the release title**
 
-
+- **tags dont't accept updates so each update to the package you will creat tag for it**
 
 
 

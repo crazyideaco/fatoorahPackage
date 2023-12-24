@@ -14,7 +14,7 @@ class GatewayintegrationServiceProvider  extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/myfatoorahConfig.php' =>  Config::get('myfatoorahConfig.php'),
+            __DIR__.'/../config/myfatoorahConfig.php' =>  config_path('myfatoorahConfig.php'),
         ], 'myfatoorah-config');
 
         // Fatoorahpayment\Gatewayintegration\src\GatewayintegrationServiceProvider.php

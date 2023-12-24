@@ -2,7 +2,7 @@
     "name": "fatoorahpayment/gatewayintegration",
     "minimum-stability": "stable",
     "prefer-stable": true,
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "package created for crazy idea company to handle the gateway integration for myfatoorah",
     "type": "library",
     "license": "MIT",
