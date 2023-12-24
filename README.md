@@ -12,7 +12,8 @@
 
 please run this command to publish the config file that has essential keys
 
-> php artisan vendor:publish --tag=myfatoorah-config
+> php artisan vendor:publish --tag=crazyfatoorahpackage-config
+> php artisan vendor:publish --tag=crazyfatoorahpackage-views
 
 - after you publish your config file you will find key `test_mode` its value is `true` as default you can change it to `false` if you want to turn to live mode
 
