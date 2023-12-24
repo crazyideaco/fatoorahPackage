@@ -20,12 +20,12 @@
 - ### [laravel-docs-packages](https://laravel.com/docs/10.x/packages)
 
 - ### [myfatoorah-docs](https://docs.myfatoorah.com/docs)
+- ### [git tags references](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag)
 
 # some useful commands 
 - git tag // fetch all tags 
 - git tag {tag-name ex. v1.0.1} // create new tag
 - git tag -d {tag name or many tags } delete one or many tags 
-
 
 ## create laravel project
 create your required version of laravel framework project, its preferable to be the latest version
