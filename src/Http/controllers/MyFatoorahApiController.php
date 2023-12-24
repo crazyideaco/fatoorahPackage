@@ -35,8 +35,8 @@ class MyFatoorahApiController extends Controller
             "CustomerMobile" => $request->CustomerMobile,
             "CustomerEmail" => $request->CustomerEmail,
             "InvoiceValue" => $request->InvoiceValue,
-            "CallBackUrl" => route('callback_page'), //"http://196.219.155.101:3000/success",
-            "ErrorUrl" => route('error_page'), //"http://196.219.155.101:3000/error",
+            "CallBackUrl" => $request->CallBackUrl ?? route('CallBackUrl'), //"http://196.219.155.101:3000/success",
+            "ErrorUrl" => $request->ErrorUrl ?? route('ErrorUrl'), //"http://196.219.155.101:3000/error",
             "Language" => $request->header('Accept-Language') ??  app()->getLocale(),
             "CustomerReference" => "noshipping-nosupplier",
             // "CustomerAddress":{
@@ -58,7 +58,7 @@ class MyFatoorahApiController extends Controller
             // ]
         ];
         $fatoorahServices = new FatoorahServicesGateway();
-        $response = $fatoorahServices->execute_payment($request);
+        $response = $fatoorahServices->execute_payment($data);
         return $response;
     }
 

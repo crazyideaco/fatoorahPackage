@@ -19,6 +19,6 @@ Route::get('contact', function(){
 });
 
 Route::controller(MyFatoorahApiController::class)->group(function () {
-    Route::any('error', 'error_page')->name('error_page');
-    Route::any('success', 'sucess_page')->name('callback_page');
+    Route::any('success', 'sucess_page')->name('CallBackUrl');
+    Route::any('error', 'error_page')->name('ErrorUrl');
 });
